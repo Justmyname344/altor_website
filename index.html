@@ -8,15 +8,16 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Altor home">
+      <a class="brand" href="index.html" aria-label="Altor home">
         <span class="brand-mark">A</span>
         <span>Altor</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#shop">Shop</a>
-        <a href="#fabric">Fabric</a>
-        <a href="#training">Training</a>
-        <a href="#contact">Contact</a>
+        <a href="shop.html">Shop</a>
+        <a href="fabric.html">Fabric</a>
+        <a href="membership.html">Membership</a>
+        <a href="training.html">Training</a>
+        <a href="contact.html">Contact</a>
       </nav>
       <button class="icon-button menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
         <span></span>
@@ -36,8 +37,8 @@
             heavy lifts, long runs, and everything in between.
           </p>
           <div class="hero-actions">
-            <a class="primary-button" href="#shop">Explore collection</a>
-            <a class="secondary-button" href="#fabric">See fabric tech</a>
+            <a class="primary-button" href="shop.html">Explore collection</a>
+            <a class="secondary-button" href="fabric.html">See fabric tech</a>
           </div>
         </div>
         <div class="hero-stats" aria-label="Brand highlights">
@@ -60,6 +61,7 @@
         <div class="section-heading">
           <p class="eyebrow">Altor categories</p>
           <h2>Four lines for the way you train.</h2>
+          <a class="text-link" href="shop.html">Shop products</a>
         </div>
         <div class="category-grid">
           <article class="category-card">
@@ -136,9 +138,38 @@
         </div>
       </section>
 
+      <section class="membership-section" id="membership" aria-label="Altor membership">
+        <div class="membership-copy">
+          <p class="eyebrow">Altor membership</p>
+          <h2>Train in the inner circle.</h2>
+          <p>
+            Join the Altor member list for early access to new compression drops, private restocks, fit notes, and
+            member-only launch pricing.
+          </p>
+        </div>
+        <div class="membership-panel">
+          <article>
+            <span>01</span>
+            <h3>Early drops</h3>
+            <p>Shop new training and running collections before public release.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Member pricing</h3>
+            <p>Access launch offers on compression tees, gym bottoms, and running layers.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Fit updates</h3>
+            <p>Get short, useful notes on fabric, sizing, and performance care.</p>
+          </article>
+          <button class="primary-button newsletter-open" type="button">Join membership</button>
+        </div>
+      </section>
+
       <section class="training-strip" id="training">
         <p>Train harder. Breathe better. Wear Altor.</p>
-        <a href="#contact">Join early access</a>
+        <button class="newsletter-open" type="button">Join early access</button>
       </section>
     </main>
 
@@ -156,6 +187,32 @@
       </form>
     </footer>
 
+    <div class="newsletter-modal" id="newsletter-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="newsletter-title"
+        aria-describedby="newsletter-copy"
+      >
+        <button class="modal-close" type="button" aria-label="Close newsletter popup" data-close-modal>&times;</button>
+        <p class="eyebrow">Newsletter</p>
+        <h2 id="newsletter-title">Get the next Altor drop first.</h2>
+        <p id="newsletter-copy">
+          Sign up for product launches, membership access, and concise training-wear updates.
+        </p>
+        <form class="modal-form" aria-label="Newsletter signup">
+          <label for="modal-email">Email address</label>
+          <div>
+            <input id="modal-email" type="email" placeholder="you@example.com" required />
+            <button type="submit">Sign up</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script src="products.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
