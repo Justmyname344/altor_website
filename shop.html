@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Altor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Altor home">
+        <span class="brand-mark">A</span>
+        <span>Altor</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="shop.html">Shop</a>
+        <a href="fabric.html">Fabric</a>
+        <a href="membership.html">Membership</a>
+        <a href="training.html">Training</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="icon-button menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <p class="eyebrow">Shop Altor</p>
+        <h1>Minimal gear. Maximum work.</h1>
+        <p>Three essential products priced between Rs. 600 and Rs. 2,000 for gym and running performance.</p>
+      </section>
+
+      <section class="shop-section" aria-label="Altor products">
+        <div class="product-list" data-product-list></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div>
+        <span class="brand footer-brand"><span class="brand-mark">A</span> Altor</span>
+        <p>Premium sports and gym wear for athletes who care how performance feels.</p>
+      </div>
+      <form class="signup-form" aria-label="Join early access">
+        <label for="email">Early access</label>
+        <div>
+          <input id="email" type="email" placeholder="you@example.com" />
+          <button type="submit">Notify me</button>
+        </div>
+      </form>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
